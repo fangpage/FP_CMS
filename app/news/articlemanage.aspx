@@ -6,7 +6,7 @@
 <script runat="server">
 override protected void OnInitComplete(EventArgs e)
 {
-	/*方配软件技术有限公司(WMS框架)，官方网站：http://www.fangpage.com，生成时间：2019-06-19 11:33:44*/
+	/*方配软件技术有限公司(WMS框架)，官方网站：http://www.fangpage.com，生成时间：2019-06-27 10:18:31*/
 	base.OnInitComplete(e);
 	int loop__id=0;
 	ViewBuilder.Append("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n");
@@ -33,13 +33,13 @@ override protected void OnInitComplete(EventArgs e)
 	ViewBuilder.Append("        PageNav(\"" + GetSortNav(sortinfo,pagename).ToString() + "\");\r\n");
 	ViewBuilder.Append("        KindEditor.create('textarea[name=\"content\"]', {\r\n");
 	ViewBuilder.Append("            resizeType: 1,\r\n");
-	ViewBuilder.Append("            uploadJson: '" + webpath.ToString() + "tools/uploadajax.aspx?sortid=" + sortid.ToString() + "',\r\n");
-	ViewBuilder.Append("            fileManagerJson: '" + webpath.ToString() + "tools/filemanagerajax.aspx',\r\n");
+	ViewBuilder.Append("            uploadJson: '" + webpath.ToString() + "plugins/editor/uploadajax.aspx?sortid=" + sortid.ToString() + "',\r\n");
+	ViewBuilder.Append("            fileManagerJson: '" + webpath.ToString() + "plugins/editor/filemanagerajax.aspx',\r\n");
 	ViewBuilder.Append("            allowFileManager: true\r\n");
 	ViewBuilder.Append("        });\r\n");
 	ViewBuilder.Append("        var editor = KindEditor.editor({\r\n");
-	ViewBuilder.Append("            uploadJson: '" + webpath.ToString() + "tools/uploadajax.aspx?sortid=" + sortid.ToString() + "',\r\n");
-	ViewBuilder.Append("            fileManagerJson: '" + webpath.ToString() + "tools/filemanagerajax.aspx',\r\n");
+	ViewBuilder.Append("            uploadJson: '" + webpath.ToString() + "plugins/editor/uploadajax.aspx?sortid=" + sortid.ToString() + "',\r\n");
+	ViewBuilder.Append("            fileManagerJson: '" + webpath.ToString() + "plugins/editor/filemanagerajax.aspx',\r\n");
 	ViewBuilder.Append("            allowFileManager: true\r\n");
 	ViewBuilder.Append("        });\r\n");
 	ViewBuilder.Append("        $('#image1').click(function () {\r\n");

@@ -17,13 +17,13 @@
         PageNav("${GetSortNav(sortinfo,pagename)}");
         KindEditor.create('textarea[name="content"]', {
             resizeType: 1,
-            uploadJson: '${webpath}tools/uploadajax.aspx?sortid=${sortid}',
-            fileManagerJson: '${webpath}tools/filemanagerajax.aspx',
+            uploadJson: '${webpath}/plugins/editor/uploadajax.aspx?sortid=${sortid}',
+            fileManagerJson: '${webpath}/plugins/editor/filemanagerajax.aspx',
             allowFileManager: true
         });
         var editor = KindEditor.editor({
-            uploadJson: '${webpath}tools/uploadajax.aspx?sortid=${sortid}',
-            fileManagerJson: '${webpath}tools/filemanagerajax.aspx',
+            uploadJson: '${webpath}/plugins/editor/uploadajax.aspx?sortid=${sortid}',
+            fileManagerJson: '${webpath}/plugins/editor/filemanagerajax.aspx',
             allowFileManager: true
         });
         $('#image1').click(function () {
