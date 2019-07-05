@@ -8,7 +8,7 @@
 <script runat="server">
 override protected void OnInitComplete(EventArgs e)
 {
-	/*方配软件技术有限公司(WMS框架)，官方网站：http://www.fangpage.com，生成时间：2019-06-19 11:27:54*/
+	/*方配软件技术有限公司(WMS框架)，官方网站：http://www.fangpage.com，生成时间：2019-07-05 15:13:01*/
 	base.OnInitComplete(e);
 	int loop__id=0;
 	ViewBuilder.Append("<!DOCTYpE html pUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n");
